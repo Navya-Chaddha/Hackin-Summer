@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackin' Summer 2026</title>
+    <meta name="description" content="Hackin' Summer 2026 - A college hackathon to build, break, and become.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-mark" aria-hidden="true"></span>
+                <span class="logo-text"><span class="logo-hackin">Hackin'</span> <span class="logo-season">Summer</span></span>
+            </a>
+            <button class="menu-toggle" aria-label="Toggle menu" type="button">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </button>
+            <nav class="nav-links">
+                <a href="#tracks" id="nav-tracks-link">Tracks</a>
+                <a href="#timeline">Timeline</a>
+                <a href="#prizes">Prizes</a>
+                <a href="#faq">Q&amp;A</a>
+                <a href="#" class="nav-register button-primary" id="nav-register-btn">Register</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="cloud cloud-1"></div>
+            <div class="cloud cloud-2"></div>
+            <div class="cloud cloud-3"></div>
+            <div class="cloud cloud-4"></div>
+            <div class="hero-deco hero-deco-code" aria-hidden="true">&lt;/&gt;</div>
+            <div class="hero-deco hero-deco-bolt" aria-hidden="true"></div>
+
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-conquer" id="hero-conquer-banner">Conquer the code</p>
+                    <h1 class="hero-title" id="hero-title">
+                        <span class="hero-title-word hero-title-dark">Hackin'</span>
+                        <span class="hero-title-word hero-title-outline">Summer</span>
+                        <span class="hero-title-year">2026</span>
+                    </h1>
+                    <p class="hero-subtitle" id="hero-subtitle">Your next favourite project might start here. So might your next team, your next obsession, or the idea you can't stop talking about.</p>
+
+                    <div class="hero-details">
+                        <div class="hero-detail-card">
+                            <span class="detail-label">Dates</span>
+                            <span class="detail-value" id="hero-dates">26–28 Sept 2026</span>
+                        </div>
+                        <div class="hero-detail-card hero-detail-card--accent">
+                            <span class="detail-label">Venue</span>
+                            <span class="detail-value" id="hero-venue">JIIT, Sec 62</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-cta-group">
+                        <a href="#" class="button-primary button-hero" id="hero-register-btn">Register now</a>
+                        <a href="#highlights" class="button-secondary button-hero-alt">Learn more</a>
+                    </div>
+                </div>
+
+                <div class="hero-mascot-panel" aria-hidden="false">
+                    <div class="hero-speech-bubble">
+                        <span>Let's code!</span>
+                    </div>
+                    <figure class="hero-mascot-scene">
+                        <img
+                            src="assets/snoopy-hero.png"
+                            alt="Snoopy and Woodstock relaxing on a sunny hill — Hackin' Summer mascot"
+                            class="hero-mascot-image"
+                            width="640"
+                            height="640"
+                            fetchpriority="high"
+                        >
+                    </figure>
+                </div>
+            </div>
+            <div class="hero-bg"></div>
+        </section>
+
+        <div class="stats-ribbon">
+            <div class="stats-container">
+                <div class="stat-item">Prize Pool <span id="stat-prize">₹35K+</span></div>
+                <div class="stat-item">Team Size <span id="stat-team">3-4</span></div>
+                <div class="stat-item" id="stat-participants-container" style="display:none;">Participants <span id="stat-participants">0</span></div>
+            </div>
+        </div>
+
+        <section class="highlights section" id="highlights">
+            <div class="container highlights-inner">
+                <h2>What's Hackin' Summer?</h2>
+                <p class="highlights-lead" id="highlights-lead">A campus hackathon where teams ship real projects in three days — from first commit to demo day.</p>
+                <div class="highlights-grid" id="highlights-container"></div>
+            </div>
+        </section>
+
+        <section class="tracks section" id="tracks">
+            <div class="container">
+                <h2>Tracks</h2>
+                <div class="tracks-grid" id="tracks-container"></div>
+            </div>
+        </section>
+
+        <section class="timeline section" id="timeline">
+            <div class="container">
+                <h2>Milestone Timeline</h2>
+                <div class="timeline-list" id="timeline-container"></div>
+            </div>
+        </section>
+
+        <section class="prizes section" id="prizes">
+            <div class="container">
+                <h2>Prizes & Opportunities</h2>
+                <div class="prize-pool-highlight">
+                    <p>Confirmed Prize Pool</p>
+                    <h3 id="prizes-total">₹35K+</h3>
+                </div>
+                <div class="prizes-grid" id="prizes-container"></div>
+            </div>
+        </section>
+
+        <section class="about section" id="rules">
+            <div class="container">
+                <h2>Rules & Eligibility</h2>
+                <div class="general-grid" id="rules-container"></div>
+            </div>
+        </section>
+
+        <section class="prizes section" id="faq">
+            <div class="container">
+                <h2>Questions &amp; Answers</h2>
+                <div id="faq-container"></div>
+            </div>
+        </section>
+
+        <section class="countdown-section" id="countdown-section" aria-labelledby="countdown-heading">
+            <div class="container countdown-wrap">
+                <div class="countdown-card">
+                    <div class="countdown-container countdown-container--large" id="countdown" aria-live="polite">
+                        <div class="countdown-box"><span class="countdown-value countdown-days">--</span><span class="countdown-label">Days</span></div>
+                        <span class="countdown-sep">:</span>
+                        <div class="countdown-box"><span class="countdown-value countdown-hours">--</span><span class="countdown-label">Hours</span></div>
+                        <span class="countdown-sep">:</span>
+                        <div class="countdown-box"><span class="countdown-value countdown-minutes">--</span><span class="countdown-label">Minutes</span></div>
+                        <span class="countdown-sep">:</span>
+                        <div class="countdown-box"><span class="countdown-value countdown-seconds">--</span><span class="countdown-label">Seconds</span></div>
+                    </div>
+                    <p class="countdown-caption" id="countdown-label">Until the hackathon kicks off</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-banner">
+            <div class="container">
+                <h2 class="cta-banner-title">Ready to build something bold?</h2>
+                <a href="#" class="button-primary" id="footer-register-btn">Register now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <p class="footer-logo">Hackin'<span class="footer-logo-accent">Summer</span> 2026</p>
+                <p class="footer-tagline" id="footer-tagline">Conquer the code</p>
+                <p class="footer-org">Organized with care by the developer community on campus.</p>
+            </div>
+            <div class="footer-links-col">
+                <p class="footer-col-title">Quick links</p>
+                <nav class="footer-quick-links" aria-label="Footer">
+                    <a href="#timeline">Timeline</a>
+                    <a href="#tracks">Tracks</a>
+                    <a href="#prizes">Prizes</a>
+                    <a href="#faq">Q&amp;A</a>
+                </nav>
+            </div>
+            <div class="footer-social-col">
+                <p class="footer-col-title">Connect</p>
+                <div class="footer-links" id="social-links"></div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p id="footer-venue">JIIT, Sector 62, on campus</p>
+            <p class="footer-copy">© 2026 Hackin' Summer. Built with caffeine and determination.</p>
+        </div>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
