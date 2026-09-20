@@ -150,25 +150,26 @@ window.HS_CONFIG = {
 
     // --- Questions & Answers ---
     faq: [
-        { question: "👀 WHO CAN PULL UP?", answer: "If you're a student with an idea, half an idea, or absolutely no idea yet — you're welcome. Come build something." },
-        { question: "🫂 CAN I COME WITHOUT A TEAM?", answer: "Yep. Lone wolves are allowed. You'll also get a chance to find people and team up before the hacking begins." },
-        { question: "👥 HOW BIG CAN MY TEAM BE?", answer: "Teams can have 2–4 people. Choose wisely — you're going to be spending a lot of time together." },
-        { question: "💸 WAIT… DO I HAVE TO PAY?", answer: "Nope. ₹0. Save that money for your post-hackathon coffee addiction." },
-        { question: "🧠 WHAT IF I'M NOT THAT GOOD AT CODING?", answer: "Perfectly fine. A hackathon isn't an exam. Come with what you know, learn what you don't, and Google the rest like everyone else." },
-        { question: "⚙️ CAN WE USE ANY TECH STACK?", answer: "Pretty much. React, Python, Flutter, AI, hardware, something mildly questionable at 3 AM — if it helps you build, go for it." },
-        { question: "📝 CAN I BRING AN OLD PROJECT?", answer: "The idea can have history. The submission shouldn't. Your actual hackathon build needs to happen during the event." },
-        { question: "🎒 WHAT DO I ACTUALLY NEED TO BRING?", answer: "Laptop. Charger. ID. Whatever hardware your build needs. And maybe a hoodie — hackathon rooms somehow always choose violence with the AC." },
-        { question: "🏆 WHAT ARE WE ACTUALLY JUDGED ON?", answer: "Your idea, how well you built it, the problem it solves, and how you present it. A shiny UI is nice. A project that actually works is nicer." },
-        { question: "😵 WHAT IF OUR PROJECT DOESN'T WORK BY THE END?", answer: "Welcome to hackathons. 😭 Show what you built, explain what you tried, and pitch the idea anyway. A broken demo doesn't erase hours of good thinking." }
+        { question: "👀 Who can participate in Hackin' Summer?", answer: "Any college student (undergraduate or postgraduate) from any course, branch, or university is welcome to join! Whether you are a seasoned coder or taking your first steps into tech, there is a place for you here." },
+        { question: "🫂 Can I register solo, or do I need a team first?", answer: "You can register solo! If you don't have a team yet, don't worry — we'll host dedicated team formation and networking activities on Discord and at the venue before hacking officially starts." },
+        { question: "👥 What is the allowed team size?", answer: "Teams must have between 2 and 4 members. Make sure all your teammates register on the portal so your team can be officially verified." },
+        { question: "💸 Is there any registration fee?", answer: "No, Hackin' Summer is 100% FREE of charge! Food, WiFi access, venue amenities, swag, and prizes are all provided without any cost to participants." },
+        { question: "🧠 What if I am a complete beginner in programming?", answer: "No problem at all! Hackathons are the absolute best place to learn. We have on-campus mentors, technical workshops, and a dedicated 'Best Beginner Hack' prize category to support and reward beginner builders." },
+        { question: "⚙️ What tech stacks or frameworks can we use?", answer: "You have complete creative freedom! Web apps, mobile apps, AI/ML models, Blockchain, Cloud infrastructure, IoT/Hardware hacks, or open-source tools — if it helps turn your idea into a working prototype, go for it!" },
+        { question: "📝 Can I work on an existing or pre-built project?", answer: "No. To maintain fairness, all project code and assets must be developed during the hackathon timeline. You can brainstorm ideas and plan your architecture beforehand, but the actual build must happen during the event." },
+        { question: "🎒 What items should I bring to the campus venue?", answer: "Bring your college ID card, laptop, charger, power strips (if available), any specific hardware components needed for your hack, comfortable clothing, and plenty of enthusiasm!" },
+        { question: "🏆 What are the judging criteria?", answer: "Projects are evaluated on four key pillars: Innovation & Originality, Technical Complexity & Execution, Practical Impact, and the Clarity of your Final Pitch & Demo." },
+        { question: "😵 What happens if our project demo is incomplete by the submission deadline?", answer: "Submit what you have built anyway! In hackathons, demonstrating your problem-solving process, architecture, and what you learned is just as valuable as a finished app. Partial builds still win prizes!" }
     ],
 
     // --- Community & Contact ---
     socials: {
-        email: "mailto:hello@hackinsummer.com",
-        discord: "https://discord.com/invite/TbeE2UdWpM", // Placeholder
-        github: "https://github.com/dsc-jiit", // Placeholder
-        instagram: "https://www.instagram.com/dscjiit/", // Placeholder
-        linkedin: "https://www.linkedin.com/company/unavailable/" // Placeholder
+        email: "mailto:support@hackinsummer.com",
+        github: "https://github.com/Navya-Chaddha/Hackin-Summer",
+        instagram: "https://www.instagram.com/dscjiit/",
+        linkedin: "https://www.linkedin.com/company/developer-student-clubs-jiit/",
+        discord: "https://discord.com/invite/TbeE2UdWpM",
+        whatsapp: "https://chat.whatsapp.com/HackinSummer2026"
     },
 
     // --- Past Editions (Gallery) ---

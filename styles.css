@@ -290,7 +290,7 @@ header {
 /* ===== HERO SECTION ===== */
 .hero {
   position: relative;
-  background: linear-gradient(180deg, #B8EBFA 0%, var(--color-sky-blue) 45%, #FFF6D6 100%);
+  background: linear-gradient(180deg, #6FD7F6 0%, #A4E5F7 35%, #FFF2B2 75%, #FFE082 100%);
   min-height: 100dvh;
   min-height: 100svh;
   padding-top: var(--header-height);
@@ -299,6 +299,30 @@ header {
   align-items: flex-start;
   overflow: hidden;
   border-bottom: var(--border-width) solid var(--color-navy);
+}
+
+/* Glowing Summer Sun */
+.hero-sun {
+  position: absolute;
+  top: clamp(60px, 10vh, 100px);
+  right: clamp(4%, 8vw, 15%);
+  width: clamp(120px, 18vw, 220px);
+  height: clamp(120px, 18vw, 220px);
+  background: radial-gradient(circle, #FFF494 0%, #FFC107 55%, rgba(255, 193, 7, 0) 75%);
+  border-radius: 50%;
+  filter: blur(8px);
+  opacity: 0.85;
+  z-index: 1;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes sunGlow {
+    0% { transform: scale(1) rotate(0deg); opacity: 0.8; }
+    50% { transform: scale(1.1) rotate(180deg); opacity: 0.95; }
+    100% { transform: scale(1) rotate(360deg); opacity: 0.8; }
+  }
+  .hero-sun { animation: sunGlow 12s linear infinite; }
 }
 
 /* Green grass strip at bottom */
@@ -572,17 +596,37 @@ header {
   box-shadow: 3px 3px 0 var(--color-navy);
 }
 
+.mascot-sticker {
+  z-index: 6;
+  font-size: clamp(0.75rem, 1.8vw, 0.85rem);
+  pointer-events: none;
+}
+
+.mascot-sticker-1 {
+  top: 10%;
+  right: 5%;
+  transform: rotate(8deg);
+  background-color: var(--color-soft-yellow);
+}
+
+.mascot-sticker-2 {
+  bottom: 12%;
+  left: 2%;
+  transform: rotate(-10deg);
+  background-color: var(--color-warm-coral);
+  color: var(--color-navy);
+}
+
 .hero-mascot-scene {
   margin: 0;
   width: 100%;
   aspect-ratio: 1 / 1;
   position: relative;
   border: var(--border-width) solid var(--color-navy);
-  border-radius: 28px 28px 0 0;
-  border-bottom: none;
+  border-radius: 28px;
   overflow: hidden;
   box-shadow: 8px 8px 0 var(--color-navy);
-  background: linear-gradient(180deg, #A8DDF5 0%, #C8EBFA 55%, var(--color-grassy-green) 100%);
+  background: linear-gradient(180deg, #FFE89C 0%, #90E0EF 55%, #FFB703 100%);
 }
 
 .hero-mascot-scene::before {
@@ -1055,8 +1099,37 @@ footer {
 
 .footer-links {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+}
+
+.footer-social-link {
+  display: inline-flex;
+  align-items: center;
   gap: 0.5rem;
+  padding: 0.45rem 0.9rem;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50px;
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.85rem;
+  transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.footer-social-link svg {
+  flex-shrink: 0;
+}
+
+.footer-social-link:hover {
+  background-color: var(--color-soft-yellow);
+  color: var(--color-navy);
+  border-color: var(--color-navy);
+  transform: translateY(-2px);
+  box-shadow: 3px 3px 0 var(--color-navy);
+  text-decoration: none !important;
 }
 
 .footer-bottom {
