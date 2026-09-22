@@ -14,7 +14,7 @@ window.HS_CONFIG = {
         taglineSupport: "So might your next team, your next obsession, or the idea you can’t stop talking about.",
         dates: "26–28 September 2026",
         venue: "JIIT, Sector 62, on campus",
-        teamSize: "2–4 members",
+        teamSize: "3–4 members",
         prizePool: "₹35K+",
         
         // Target date for the countdown timer (Asia/Kolkata timezone is handled in JS)
@@ -76,8 +76,9 @@ window.HS_CONFIG = {
         totalPool: "₹35K+",
         breakdown: [
             { category: "First Overall", reward: "To be announced" },
-            { category: "Runner Up", reward: "To be announced" },
-            { category: "Best Beginner Hack", reward: "To be announced" }
+            { category: "First Runner Up", reward: "To be announced" },
+            { category: "Second Runner Up", reward: "To be announced" },
+            { category: "First Year Category", reward: "To be announced" }
         ],
         perks: [
             "Certificates for all participants",
@@ -89,7 +90,7 @@ window.HS_CONFIG = {
     // --- Rules & Eligibility ---
     rules: [
         { title: "Eligibility", description: "College students from any year or branch." },
-        { title: "Team Size", description: "Strictly 2–4 members per team. (Confirmed)" },
+        { title: "Team Size", description: "Strictly 3–4 members per team. (Confirmed)" },
         { title: "Originality", description: "All code must be written during the hackathon." },
         { title: "Tools & APIs", description: "Use of open-source tools and public APIs is allowed." },
         { title: "Code of Conduct", description: "Be respectful. Harassment of any kind will not be tolerated." }
@@ -144,9 +145,9 @@ window.HS_CONFIG = {
     faq: [
         { question: "👀 Who can participate in Hackin' Summer?", answer: "Any college student (undergraduate or postgraduate) from any course, branch, or university is welcome to join! Whether you are a seasoned coder or taking your first steps into tech, there is a place for you here." },
         { question: "🫂 Can I register solo, or do I need a team first?", answer: "You can register solo! If you don't have a team yet, don't worry — we'll host dedicated team formation and networking activities on Discord and at the venue before hacking officially starts." },
-        { question: "👥 What is the allowed team size?", answer: "Teams must have between 2 and 4 members. Make sure all your teammates register on the portal so your team can be officially verified." },
-        { question: "💸 Is there any registration fee?", answer: "No, Hackin' Summer is 100% FREE of charge! Food, WiFi access, venue amenities, swag, and prizes are all provided without any cost to participants." },
-        { question: "🧠 What if I am a complete beginner in programming?", answer: "No problem at all! Hackathons are the absolute best place to learn. We have on-campus mentors, technical workshops, and a dedicated 'Best Beginner Hack' prize category to support and reward beginner builders." },
+        { question: "👥 What is the allowed team size?", answer: "Teams must have between 3 and 4 members. Make sure all your teammates register on the portal so your team can be officially verified." },
+        { question: "💸 Is there any registration fee?", answer: "No, Hackin' Summer is 100% FREE of charge! WiFi access, venue amenities, swag, and prizes are all provided without any cost to participants." },
+        { question: "🧠 What if I am a complete beginner in programming?", answer: "No problem at all! Hackathons are the absolute best place to learn. We have on-campus mentors, technical workshops, and a dedicated 'First Year' category to support and reward first-year builders." },
         { question: "⚙️ What tech stacks or frameworks can we use?", answer: "You have complete creative freedom! Web apps, mobile apps, AI/ML models, Blockchain, Cloud infrastructure, IoT/Hardware hacks, or open-source tools — if it helps turn your idea into a working prototype, go for it!" },
         { question: "📝 Can I work on an existing or pre-built project?", answer: "No. To maintain fairness, all project code and assets must be developed during the hackathon timeline. You can brainstorm ideas and plan your architecture beforehand, but the actual build must happen during the event." },
         { question: "🎒 What items should I bring to the campus venue?", answer: "Bring your college ID card, laptop, charger, power strips (if available), any specific hardware components needed for your hack, comfortable clothing, and plenty of enthusiasm!" },

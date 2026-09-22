@@ -209,6 +209,16 @@ header {
   flex-shrink: 0;
 }
 
+.logo-text {
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
+  color: var(--color-navy);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
 .logo-mark {
   width: 28px;
   height: 28px;
