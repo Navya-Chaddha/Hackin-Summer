@@ -971,7 +971,7 @@ footer {
   :root { --header-height: 64px; }
   .hero { padding-top: calc(var(--header-height) + 2rem); }
   .hero-content { gap: 2rem; }
-  .hero-mascot-panel { max-width: 260px; }
+  .hero-mascot-panel { max-width: 290px; }
   .hero-mascot-scene { border-radius: 22px; box-shadow: 5px 5px 0 var(--color-navy); }
   .hero-title-word { font-size: clamp(3.25rem, 13vw, 4.75rem); }
   .hero-title-year { font-size: clamp(2rem, 8vw, 2.75rem); }
