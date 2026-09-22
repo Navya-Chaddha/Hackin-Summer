@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hackin' Summer 2026</title>
-    <meta name="description" content="Hackin' Summer 2026 - A college hackathon to build, break, and become.">
+    <meta name="description" content="Your next favourite project might start here. So might your next team, your next obsession, or the idea you can’t stop talking about. Join Hackin' Summer 2026.">
+    <link rel="icon" type="image/png" href="assets/logo.png">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <a class="skip-link" href="#home">Skip to content</a>
 
     <header id="navbar">
         <div class="nav-container">
@@ -15,12 +17,12 @@
                 <span class="logo-mark" aria-hidden="true"></span>
                 <span class="logo-text"><span class="logo-hackin">Hackin'</span> <span class="logo-season">Summer</span></span>
             </a>
-            <button class="menu-toggle" aria-label="Toggle menu" type="button">
+            <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-navigation" type="button">
                 <span class="menu-bar"></span>
                 <span class="menu-bar"></span>
                 <span class="menu-bar"></span>
             </button>
-            <nav class="nav-links">
+            <nav class="nav-links" id="primary-navigation" aria-label="Main navigation">
                 <a href="#highlights">About</a>
                 <a href="#tracks" id="nav-tracks-link">Tracks</a>
                 <a href="#timeline">Timeline</a>
@@ -33,24 +35,16 @@
     </header>
 
     <main>
-        <section class="hero" id="home">
-            <div class="hero-sun" aria-hidden="true"></div>
-            <div class="cloud cloud-1"></div>
-            <div class="cloud cloud-2"></div>
-            <div class="cloud cloud-3"></div>
-            <div class="cloud cloud-4"></div>
-            <div class="hero-deco hero-deco-code" aria-hidden="true">&lt;/&gt;</div>
-            <div class="hero-deco hero-deco-bolt" aria-hidden="true"></div>
-
+        <section class="hero" id="home" tabindex="-1">
             <div class="hero-content">
                 <div class="hero-text">
-                    <p class="hero-conquer" id="hero-conquer-banner">Conquer the code</p>
                     <h1 class="hero-title" id="hero-title">
                         <span class="hero-title-word hero-title-dark">Hackin'</span>
                         <span class="hero-title-word hero-title-outline">Summer</span>
                         <span class="hero-title-year">2026</span>
                     </h1>
-                    <p class="hero-subtitle" id="hero-subtitle">Your next favourite project might start here. So might your next team, your next obsession, or the idea you can't stop talking about.</p>
+                    <p class="hero-tagline" id="hero-tagline">Your next favourite project might start here.</p>
+                    <p class="hero-subtitle" id="hero-subtitle">So might your next team, your next obsession, or the idea you can’t stop talking about.</p>
 
                     <div class="hero-details">
                         <div class="hero-detail-card">
@@ -69,31 +63,25 @@
                     </div>
                 </div>
 
-                <div class="hero-mascot-panel" aria-hidden="false">
-                    <div class="sticker mascot-sticker mascot-sticker-1">☀️ SUMMER VIBES</div>
-                    <div class="sticker mascot-sticker mascot-sticker-2">🌴 BEACH &amp; BYTES</div>
-                    <div class="hero-speech-bubble">
-                        <span>Sun's out, code's out! ☀️💻</span>
-                    </div>
+                <div class="hero-mascot-panel">
                     <figure class="hero-mascot-scene">
                         <img
                             src="assets/snoopy-summer-hero.jpg"
                             alt="Snoopy coding on a sunny beach under a palm umbrella — Hackin' Summer mascot"
                             class="hero-mascot-image"
-                            width="640"
-                            height="640"
+                            width="1024"
+                            height="1024"
                             fetchpriority="high"
                         >
                     </figure>
                 </div>
             </div>
-            <div class="hero-bg"></div>
         </section>
 
         <div class="stats-ribbon">
             <div class="stats-container">
                 <div class="stat-item">Prize Pool <span id="stat-prize">₹35K+</span></div>
-                <div class="stat-item">Team Size <span id="stat-team">3-4</span></div>
+                <div class="stat-item">Team Size <span id="stat-team">2–4 members</span></div>
                 <div class="stat-item" id="stat-participants-container" style="display:none;">Participants <span id="stat-participants">0</span></div>
             </div>
         </div>
@@ -131,7 +119,7 @@
             </div>
         </section>
 
-        <section class="about section" id="rules">
+        <section class="rules section" id="rules">
             <div class="container">
                 <h2>Rules & Eligibility</h2>
                 <div class="general-grid" id="rules-container"></div>
@@ -145,10 +133,10 @@
             </div>
         </section>
 
-        <section class="countdown-section" id="countdown-section" aria-labelledby="countdown-heading">
+        <section class="countdown-section" id="countdown-section" aria-labelledby="countdown-label">
             <div class="container countdown-wrap">
                 <div class="countdown-card">
-                    <div class="countdown-container countdown-container--large" id="countdown" aria-live="polite">
+                    <div class="countdown-container countdown-container--large" id="countdown" role="timer" aria-live="off">
                         <div class="countdown-box"><span class="countdown-value countdown-days">--</span><span class="countdown-label">Days</span></div>
                         <span class="countdown-sep">:</span>
                         <div class="countdown-box"><span class="countdown-value countdown-hours">--</span><span class="countdown-label">Hours</span></div>
@@ -174,14 +162,15 @@
         <div class="container footer-grid">
             <div class="footer-brand">
                 <p class="footer-logo">Hackin'<span class="footer-logo-accent">Summer</span> 2026</p>
-                <p class="footer-tagline" id="footer-tagline">Conquer the code</p>
+                <p class="footer-tagline" id="footer-tagline">Your next favourite project might start here.</p>
                 <p class="footer-org">Organized with care by the developer community on campus.</p>
             </div>
             <div class="footer-links-col">
                 <p class="footer-col-title">Quick links</p>
                 <nav class="footer-quick-links" aria-label="Footer">
+                    <a href="#highlights">About</a>
                     <a href="#timeline">Timeline</a>
-                    <a href="#tracks">Tracks</a>
+                    <a href="#tracks" id="footer-tracks-link">Tracks</a>
                     <a href="#prizes">Prizes</a>
                     <a href="#faq">Q&amp;A</a>
                 </nav>

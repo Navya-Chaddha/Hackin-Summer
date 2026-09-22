@@ -10,8 +10,8 @@ window.HS_CONFIG = {
     // --- Core Event Details ---
     eventDetails: {
         name: "Hackin' Summer 2026",
-        tagline: "Build. Break. Become.",
-        heroBanner: "Conquer the code",
+        tagline: "Your next favourite project might start here.",
+        taglineSupport: "So might your next team, your next obsession, or the idea you can’t stop talking about.",
         dates: "26–28 September 2026",
         venue: "JIIT, Sector 62, on campus",
         teamSize: "2–4 members",
@@ -24,18 +24,10 @@ window.HS_CONFIG = {
         
         registrationOpen: true,
         // Paste your Unstop / Devpost / Google Form link here when ready
-        registrationUrl: null, 
+        registrationUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdAleSM3yF7tphby2bvFhLXGlLwgOy4KZBVPhpRZI5_InzzYQ/viewform",
         
         // Counter for participants/teams (set to null if no data source exists yet)
         participantCount: null
-    },
-
-    // --- About Section ---
-    about: {
-        description: "Welcome to Hackin' Summer 2026, the brightest hackathon of the season! Join us on campus at JIIT for three days of intense building, breaking, and becoming.",
-        theme: "Our theme this year is Open Innovation. Bring your wildest ideas and turn them into reality.",
-        whoCanJoin: "Open to all enthusiastic college students. Whether you are a seasoned hacker or a complete beginner, this is the place to learn and build.",
-        beginnerFriendly: true // Will show a welcoming note for beginners if true
     },
 
     highlights: [
@@ -165,7 +157,6 @@ window.HS_CONFIG = {
     // --- Community & Contact ---
     socials: {
         email: "mailto:support@hackinsummer.com",
-        github: "https://github.com/Navya-Chaddha/Hackin-Summer",
         instagram: "https://www.instagram.com/dscjiit/",
         linkedin: "https://www.linkedin.com/company/developer-student-clubs-jiit/",
         discord: "https://discord.com/invite/TbeE2UdWpM",
